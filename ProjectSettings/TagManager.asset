@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - Friendly
+  - Projectile
+  - Boss
+  - Destroyable
+  - Collectable
+  - Fire
+  - Player/Melee
+  - Player/Projectile
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Background
+  - Player
+  - Enemies
+  - Projectiles
+  - Foreground
+  - Collectables
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background/Sky
+    uniqueID: 3312273329
+    locked: 0
+  - name: Background/Clouds
+    uniqueID: 3370140585
+    locked: 0
+  - name: Background/Mountain
+    uniqueID: 1565013367
+    locked: 0
+  - name: Background/Indoor
+    uniqueID: 3585872463
+    locked: 0
+  - name: Background/Ground
+    uniqueID: 607646821
+    locked: 0
+  - name: Player
+    uniqueID: 1393172879
+    locked: 0
+  - name: Player/Melee
+    uniqueID: 893031075
+    locked: 0
+  - name: Enemies
+    uniqueID: 3590388145
+    locked: 0
+  - name: Details
+    uniqueID: 3610793421
+    locked: 0
+  - name: Foreground
+    uniqueID: 1143200617
+    locked: 0
