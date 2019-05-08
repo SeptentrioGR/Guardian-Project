@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class MeleeScript : MonoBehaviour
 {
@@ -21,9 +22,9 @@ public class MeleeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+   
         
-        if (Input.GetKeyDown(KeyCode.F) && !MeleeAttack)
+        if (CrossPlatformInputManager.GetButtonDown("Melee") && !MeleeAttack)
         {
             StartCoroutine(MeleeScriptDelay());
             if (AudioManager.Instance)

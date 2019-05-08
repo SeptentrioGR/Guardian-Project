@@ -56,10 +56,10 @@ public class PlatformController : MonoBehaviour
         }
 
 
-        Shooting = CrossPlatformInputManager.GetButton(Constants.m_FireButtonString);
+        Shooting = CrossPlatformInputManager.GetButton(Constants.Mobile2ButtonString);
 
         if(!Jumped)
-        Jumped = CrossPlatformInputManager.GetButtonDown(Constants.JumpButtonString);
+        Jumped = CrossPlatformInputManager.GetButtonDown(Constants.Mobile1ButtonString); ;
 
 
 

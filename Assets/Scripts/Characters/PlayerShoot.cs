@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerShoot : MonoBehaviour
 {
@@ -26,7 +27,7 @@ public class PlayerShoot : MonoBehaviour
             return;
         }
 
-        if (Input.GetButton("Fire1"))
+        if (CrossPlatformInputManager.GetButton(Constants.Mobile2ButtonString))
         {
             if (Time.time > m_NextFire)
             {

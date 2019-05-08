@@ -18,7 +18,7 @@ public class Controls {
 
     public static bool FireButtonPressed()
     {
-        if (CrossPlatformInputManager.GetButton(Constants.m_FireButtonString))
+        if (CrossPlatformInputManager.GetButton(Constants.Mobile2ButtonString))
         {
             return true;
         }

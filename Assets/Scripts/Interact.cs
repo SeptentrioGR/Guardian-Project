@@ -47,7 +47,8 @@ public class Interact : MonoBehaviour
                 KeyPressed = false;
             }
         }
-
+        InteractMessage interactMessage = InteractGO.GetComponent<InteractMessage>();
+        interactMessage.SetMessage(string.Format("ENTER TO CLOSE RIFT", 0));
         InteractGO.SetActive(ActionAvailable);
     }
 
@@ -67,7 +68,7 @@ public class Interact : MonoBehaviour
         {
             ActionAvailable = true;
             InteractGO.transform.position = collision.gameObject.transform.localPosition + offset;
-            if (CrossPlatformInputManager.GetButtonDown(Constants.InteractKeyString) && !KeyPressed)
+            if (CrossPlatformInputManager.GetButtonDown("Shoot") && !KeyPressed)
             {
                 KeyPressed = true;
                 collision.GetComponent<IInteractable>().Action();

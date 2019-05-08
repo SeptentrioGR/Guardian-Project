@@ -9,12 +9,13 @@ public class AfterPokeFunScript : MonoBehaviour {
     public string[] LinesToSay;
     private bool SaidSomething;
     private float timerToSaySomethingNew = 0;
-    private float delayBeforeSaySomethingNew = 2;
+    private float delayBeforeSaySomethingNew = 10;
     private float timeBeforeGettingBored = 60;
 
     private void Start()
     {
         timerToSaySomethingNew = delayBeforeSaySomethingNew;
+
     }
 
     void Update()

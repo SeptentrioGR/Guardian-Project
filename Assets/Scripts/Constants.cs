@@ -1,4 +1,6 @@
 ﻿public struct Constants{
+    public static string Mobile1ButtonString = "Jump";
+    public static string Mobile2ButtonString = "Shoot";
     public static string m_FireButtonString = "Fire1";
     public static string JumpButtonString = "Jump";
     public static string InteractKeyString = "Interact";
