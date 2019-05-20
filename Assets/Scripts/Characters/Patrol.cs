@@ -111,14 +111,9 @@ public class Patrol : Enemy
                 }
             }
 
-            transform.position =
-               Vector2.SmoothDamp(
-                   transform.position,
-                   new Vector2(Target.transform.position.x, transform.position.y),
-                   ref velocity,
-                   1,
-                   speed,
-                   Time.deltaTime);
+            Vector2 diffrencePos = (Target.transform.position - transform.position).normalized;
+
+            transform.position = Vector3.MoveTowards(transform.position, diffrencePos, speed * Time.deltaTime);
         }
 
     }
